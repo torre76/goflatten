@@ -1,0 +1,10 @@
+language: go
+
+go:
+  - 1.15.x
+
+install:
+  - go get -v -t -d ./...
+
+script:
+  - go test -count=1 -v ./...
